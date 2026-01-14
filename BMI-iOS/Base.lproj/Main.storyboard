@@ -72,9 +72,16 @@
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Peso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWZ-X0-SC4">
                                         <rect key="frame" x="21" y="301" width="364" height="86"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
                                         <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descripcion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmi-HD-fxP">
+                                        <rect key="frame" x="8" y="412" width="373" height="63"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                        <color key="textColor" systemColor="systemYellowColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -93,6 +100,7 @@
                     <connections>
                         <outlet property="heightLabel" destination="vAQ-i2-q12" id="7qh-BM-gaA"/>
                         <outlet property="heightStepper" destination="05L-DY-P3J" id="Q9Y-UV-boK"/>
+                        <outlet property="resultDescriptionLaval" destination="Mmi-HD-fxP" id="rQ3-5Q-TG2"/>
                         <outlet property="resultLaval" destination="eWZ-X0-SC4" id="Y2f-EI-Pde"/>
                         <outlet property="weightLabel" destination="ejI-mT-k4a" id="R1f-OO-qEL"/>
                         <outlet property="weightSlider" destination="Uuu-lN-cq8" id="pnQ-d8-Ojp"/>
@@ -100,12 +108,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-732.06106870229007" y="124.64788732394366"/>
+            <point key="canvasLocation" x="-362" y="108"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
