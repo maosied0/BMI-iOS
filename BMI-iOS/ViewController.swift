@@ -29,15 +29,25 @@ class MainViewController: UIViewController {
     @IBAction func onWeightChanged(_ sender: Any) {
         weight = weightSlider.value
         weightLabel.text = "\(Int(weight)) kg"
-
+        
+        calculateBMI ()
+        
     }
     @IBAction func onHeightChanged(_ sender: Any) {
         height = Float(heightStepper.value)
         heightLabel.text = "\(Int(height)) cm"
+        
+        calculateBMI ()
+        
     }
 
     @IBAction func CalculateBMI(_ sender: Any) {
-
+        
+        calculateBMI ()
+        
+    }
+    func calculateBMI() {
+        
         let height = Float(heightStepper.value / 100.0)
 
         let bmi = weight / (height * height)
@@ -77,5 +87,8 @@ class MainViewController: UIViewController {
         resultDescriptionLaval.textColor = resultColor
         
     }
+        
+    }
 
-}
+
+
